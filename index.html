@@ -4,23 +4,141 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- font awesome cdn link  -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css">
+    <!--custom css file link-->
     <link rel="stylesheet" href="css/style.css">
     <title>Home</title>
 </head>
 <body>
-    <!-- Header Section -->
+
+    <!-- header section -->
     <header>
-        <div class="container">
-            <h4 class="logo">Logo</h4>
-            <nav class="primary-nav">
-                <ul class="nav__list">
+        <div class="container flex">
+            <h2 class="logo">Logo</h2>
+            <button class="nav-toggle" aria-controls="primary-nav"><i class=" fas fa-bars"><span class="sr-only">menu</span></i></button>
+            <nav class="primary-nav" id="primary-nav" data-visible="false">
+                <ul class="nav__list flex">
                     <li class="nav__item"><a class="nav__link" href="#">Home</a></li>
-                    <li class="nav__item"><a class="nav__link" href="#">Books</a></li>
+                    <li class="nav__item"><a class="nav__link" href="books.html">Books</a></li>
                     <li class="nav__item"><a class="nav__link" href="#">About</a></li>
                     <li class="nav__item"><a class="nav__link" href="#">Contact</a></li>
                 </ul>
             </nav>
-        </div>
+        </div> <!-- container -->
     </header>
+
+        <!-- hero section -->
+        <section class="hero">
+            <div class="container">
+                <div class="hero__content">
+                    <h1 class="hero__heading">our Books are a uniquely portable magic</h1>
+                    <p class="hero__body-text">If you don't like to read, you haven't found the right book yet so take a look at ALGADI library to find it</p>
+                    <a href="#" class="btn btn--white">Explorer More</a>
+                </div>
+            </div>
+        </section>
+
+        <!-- main section -->
+        <main>
+            <!-- best seller books -->
+            <section class="books-wrapper">
+                <h3 class="books__heading">Best Seller Books</h3>
+                <div class="container">
+                    <div class="books">
+                        <figure class="book">
+                            <img src="images/book-cover.jpg" alt="" class="book__cover">
+                            <figcaption class="book__detail">
+                                <div>
+                                    <h4 class="book__title">Atomic Habit</h4>
+                                    <p class="book__author">James Clear</p>
+                                </div>
+                                <p class="book__price">price: <span class="price">$5</span></p>
+                            </figcaption>
+                            <a href="#" class="btn">Read More</a>
+                        </figure>
+                        <figure class="book">
+                            <img src="images/book-cover.jpg" alt="" class="book__cover">
+                            <figcaption class="book__detail">
+                                <div>
+                                    <h4 class="book__title">Atomic Habit</h4>
+                                    <p class="book__author">James Clear</p>
+                                </div>
+                                <p class="book__price">price: <span class="price">$5</span></p>
+                            </figcaption>
+                            <a href="#" class="btn">Read More</a>
+                        </figure>
+                        <figure class="book">
+                            <img src="images/book-cover.jpg" alt="" class="book__cover">
+                            <figcaption class="book__detail">
+                                <div>
+                                    <h4 class="book__title">Atomic Habit</h4>
+                                    <p class="book__author">James Clear</p>
+                                </div>
+                                <p class="book__price">price: <span class="price">$5</span></p>
+                            </figcaption>
+                            <a href="#" class="btn">Read More</a>
+                        </figure>
+                        <figure class="book">
+                            <img src="images/book-cover.jpg" alt="" class="book__cover">
+                            <figcaption class="book__detail">
+                                <div>
+                                    <h4 class="book__title">Atomic Habit</h4>
+                                    <p class="book__author">James Clear</p>
+                                </div>
+                                <p class="book__price">price: <span class="price">$5</span></p>
+                            </figcaption>
+                            <a href="#" class="btn">Read More</a>
+                        </figure>
+                    </div>
+                    <a href="#" class="btn">View All</a>
+                </div> <!-- container -->
+            </section>
+
+            <!-- newest books -->
+            <section class="books-wrapper">
+                <div class="books__heading">
+                    <h3>Newest Books</h3>
+                </div>
+                <div class="container">
+                    <div class="books">
+                        <figure class="book">
+                            <img src="images/book-cover.jpg" alt="" class="book__cover">
+                            <figcaption class="book__detail">
+                                <div>
+                                    <h4 class="book__title">Atomic Habit</h4>
+                                    <p class="book__author">James Clear</p>
+                                </div>
+                                <p class="book__price">price: <span class="price">$5</span></p>
+                            </figcaption>
+                            <a href="#" class="btn">Read More</a>
+                        </figure>
+                    </div>
+                    <a href="#" class="btn">View All</a>
+                </div> <!-- container -->
+            </section>
+        </main>
+
+        <!-- footer section -->
+        <footer>
+            <div class="container flex">
+                <h2 class="logo">Logo</h2>
+                <nav class="secondary-nav">
+                    <ul class="nav__list flex">
+                        <li class="nav__item"><a class="nav__link" href="#">Home</a></li>
+                        <li class="nav__item"><a class="nav__link" href="#">Books</a></li>
+                        <li class="nav__item"><a class="nav__link" href="#">About</a></li>
+                        <li class="nav__item"><a class="nav__link" href="#">Contact</a></li>
+                    </ul>
+                </nav>
+            </div> <!-- container -->
+
+            <div class="attribution">
+                <p>Copyright © 2022 Our Compny</p>
+            </div>
+        </footer>
+        
+
+    <script src="js/main.js"></script>
 </body>
 </html>

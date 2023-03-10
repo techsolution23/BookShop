@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- font awesome cdn link  -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css">
+    <!--custom css file link-->
+    <link rel="stylesheet" href="css/style.css">
+    <title>Books</title>
+</head>
+<body>
+    <!-- header section -->
+    <header>
+        <div class="container flex">
+            <h2 class="logo">Logo</h2>
+            <button class="nav-toggle" aria-controls="primary-nav"><i class=" fas fa-bars"><span class="sr-only">menu</span></i></button>
+            <nav class="primary-nav" id="primary-nav" data-visible="false">
+                <ul class="nav__list flex">
+                    <li class="nav__item"><a class="nav__link" href="index.html">Home</a></li>
+                    <li class="nav__item"><a class="nav__link" href="#">Books</a></li>
+                    <li class="nav__item"><a class="nav__link" href="#">About</a></li>
+                    <li class="nav__item"><a class="nav__link" href="#">Contact</a></li>
+                </ul>
+            </nav>
+        </div> <!-- container -->
+    </header>
+
+    <!-- hero section -->
+    <section class="hero">
+        <div class="container">
+            <div class="hero__content">
+                <h1 class="hero__heading">our Books Library</h1>
+            </div>
+        </div>
+    </section>
+
+    <!-- main section -->
+
+    <main>
+        <div class="container">
+            <section class="filter-wrapper">
+                <div class="dropdown__filter flex">
+                    
+                    <div class="price__filter">
+                        <label for="price">Price</label>
+                        <select name="price" id="price" class="price__dropdown">
+                            <option value>All Price</option>
+                            <option value="1"></option>
+                            <option value="2"></option>
+                            <option value="3"></option>
+                        </select>
+                    </div>
+                    <div class="genre__filter">
+                        <label for="genre">Genre</label>
+                        <select name="genre" id="genre" class="genre__dropdown">
+                            <option value>All Genre</option>
+                            <option value="1"></option>
+                            <option value="2"></option>
+                            <option value="3"></option>
+                            <option value="4"></option>
+                        </select>
+                    </div>
+                    <button class="btn btn--reset"><i class="fas fa-times"></i>Reset</button>
+                </div> <!-- dropdown__filter -->
+
+                <div class="search__filter">
+                    <div class="search__field">
+                        <input type="search" name="search" id="search">
+                        <a href="#"><i class="fas fa-search"><span class="sr-only">search</span></i></a>
+                    </div>
+                </div> <!-- search__filter -->
+
+            </section> <!-- filter-wrapper -->
+
+            <div class="books">
+                <figure class="book">
+                    <img src="images/book-cover.jpg" alt="" class="book__cover">
+                    <figcaption class="book__detail">
+                        <div>
+                            <h4 class="book__title">Atomic Habit</h4>
+                            <p class="book__author">James Clear</p>
+                        </div>
+                        <p class="book__price">price: <span class="price">$5</span></p>
+                    </figcaption>
+                    <a href="#" class="btn">Read More</a>
+                </figure>
+                <figure class="book">
+                    <img src="images/book-cover.jpg" alt="" class="book__cover">
+                    <figcaption class="book__detail">
+                        <div>
+                            <h4 class="book__title">Atomic Habit</h4>
+                            <p class="book__author">James Clear</p>
+                        </div>
+                        <p class="book__price">price: <span class="price">$5</span></p>
+                    </figcaption>
+                    <a href="#" class="btn">Read More</a>
+                </figure>
+                <figure class="book">
+                    <img src="images/book-cover.jpg" alt="" class="book__cover">
+                    <figcaption class="book__detail">
+                        <div>
+                            <h4 class="book__title">Atomic Habit</h4>
+                            <p class="book__author">James Clear</p>
+                        </div>
+                        <p class="book__price">price: <span class="price">$5</span></p>
+                    </figcaption>
+                    <a href="#" class="btn">Read More</a>
+                </figure>
+                <figure class="book">
+                    <img src="images/book-cover.jpg" alt="" class="book__cover">
+                    <figcaption class="book__detail">
+                        <div>
+                            <h4 class="book__title">Atomic Habit</h4>
+                            <p class="book__author">James Clear</p>
+                        </div>
+                        <p class="book__price">price: <span class="price">$5</span></p>
+                    </figcaption>
+                    <a href="#" class="btn">Read More</a>
+                </figure>
+            </div>
+        </div> <!-- container -->  
+    </main>
+
+    <script src="js/main.js"></script>
+</body>
+</html>

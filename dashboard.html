@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- font awesome cdn link  -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css">
+    <!--custom css file link-->
+    <link rel="stylesheet" href="css/style.css">
+    <title>Dashboard</title>
+</head>
+<body>
+     <!-- header section -->
+     <header>
+        <div class="container flex">
+            <h2 class="logo">Logo</h2>
+            <button class="nav-toggle" aria-controls="primary-nav"><i class=" fas fa-bars"><span class="sr-only">menu</span></i></button>
+            <nav class="primary-nav" id="primary-nav" data-visible="false">
+                <ul class="nav__list flex">
+                    <li class="nav__item"><a class="nav__link" href="index.html">Home</a></li>
+                    <li class="nav__item"><a class="nav__link" href="#">Books</a></li>
+                    <li class="nav__item"><a class="nav__link" href="#">About</a></li>
+                    <li class="nav__item"><a class="nav__link" href="#">Contact</a></li>
+                </ul>
+            </nav>
+        </div> <!-- container -->
+    </header>
+
+    <main class="main--dashboard">
+        <div class="form-wrapper">
+            <button class="btn close-form"><i class="fas fa-times"></i></button>
+            <form action="#" class="add-book">
+                <h1 class="form__heading">Add Books</h1>
+                <div class="form__field tite__field">
+                    <label for="title">book title</label>
+                    <input type="text" name="title" id="title" placeholder="title">
+                </div>
+                <div class="form__field author__field">
+                    <label for="author">book author</label>
+                    <input type="text" name="author" id="author" placeholder="author">
+                </div>
+                <div class="form__field price__field">
+                    <label for="price">price</label>
+                    <input type="number" name="price" id="price" placeholder="price">
+                </div>
+                <div class="form__field genre__field">
+                    <label for="genre">book genre</label>
+                    <input type="text" name="genre" id="genre" placeholder="genre">
+                </div>
+                <div class="form__field cover__field">
+                    <label for="cover">book cover</label>
+                    <input type="file" name="cover" id="cover" placeholder="cover">
+                </div>
+                
+                <input type="submit" value="Add" class="btn">
+            </form>
+        </div>
+        <div class="container">
+            <button class="btn btn--add-book">Add New Book</button>
+            <section class="books-review">
+                <div class="row">
+                    <div class="title">Book Title</div>
+                    <div class="author">Book Author</div>
+                    <div class="Price">Book Price</div>
+                    <div class="genre">Book Genre</div>
+                    <div class="control">Remove Or Change</div>
+                </div>
+            </section>
+        </div> <!-- container -->
+    </main>
+
+    <script src="js/main.js"></script>
+</body>
+</html>
